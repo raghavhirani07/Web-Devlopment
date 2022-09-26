@@ -1,0 +1,37 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30PX;
+}
+
+.flex-container {
+    background-color: white;
+    display: flex;
+}
+
+.row {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.flex-container div {
+    flex-grow: 1;
+    background-color: red;
+    width: auto;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.row div {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
