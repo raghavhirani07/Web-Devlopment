@@ -1,0 +1,44 @@
+body {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.box {
+    border-radius: 10px;
+    width: 30%;
+    background-color: lightyellow;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.box img {
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    object-fit: cover;
+    width: 90%;
+    margin: auto;
+}
+
+.box button {
+    display: flex;
+    margin-bottom: 10px;
+    height: 40px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.box p {
+    overflow: hidden;
+    padding-left: 5%;
+    padding-right: 10px;
+}
