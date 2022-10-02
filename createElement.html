@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreateElement </title>
+</head>
+
+<body>
+    <h2>Create Element </h2>
+
+    <script>
+        let ul = document.createElement(`ul`);
+        document.body.append(ul);
+        while (true) {
+            let name = prompt(`Enter your name `);
+            if (!name) {
+                break;
+            }
+            let li = document.createElement(`li`);
+            li.textContent = name;
+            ul.append(li);
+        }
+    </script>
+</body>
+
+</html>
