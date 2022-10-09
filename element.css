@@ -1,0 +1,45 @@
+
+p
+
+{
+    color:greenyellow;
+}
+li{
+    list-style-type: none;
+
+}
+.special
+{
+    color: yellow;
+    font-size:xx-large;
+}
+span.special
+{
+    color: violet;
+}
+li em{
+    color: rebeccapurple;
+}
+.a
+{
+    text-decoration: none;
+    color:black;
+}
+a:hover
+{
+    color:yellow;
+    text-decoration: none;
+
+}
+body h1+p .special
+{
+    color:pink;
+    background-color: saddlebrown;
+    padding: 5px
+    ;
+}
+*
+{
+    list-style: none;
+    color: rgb(34, 25, 25);
+}
