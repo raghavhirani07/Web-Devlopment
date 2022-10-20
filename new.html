@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .divElem{
+
+            border: 2px solid black;
+            width: 200px;
+            margin: 34px;
+            padding: 25px;
+        }
+    </style>
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>Editable Div</h1>
+    <div class="divElem">Hello this is editable div please click on this to edit it.</div>
+</body>
+<!-- <script src="editableDiv.js"></script> -->
+</html>
+<script>
+console.log("This is editable div");
+var divelement = document.getElementsByTagName('div');
+console.log(divelement[0]);
+divelement[0].addEventListener('click',function(){
+
+    let check = document.getElementsByClassName('textarea').length;
+    if(check == 0)
+    {
+        let html1 = divelement[0].innerHTML;
+        divelement[0].innerHTML = `<textarea name="" id="" cols="30" rows="10" class="textarea">${html1}</textarea>`;
+        textarea=document.getElementsByClassName('textarea')[0];
+ console.log(textarea.innerText);
+       // divelement[0].innerText=textarea.innerText;
+
+    }
+
+
+});
+</script>
